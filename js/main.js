@@ -207,8 +207,8 @@ window.addEventListener('DOMContentLoaded', loadNews);
 window.addEventListener('load', function() {
     const loadingOverlay = document.getElementById('loading-overlay');
     
-    // Set minimum display time (8 seconds)
-    const minDisplayTime = 8000;
+    // Set minimum display time (3 seconds)
+    const minDisplayTime = 3000;
     const pageLoadTime = performance.now();
     
     function hideLoader() {
@@ -230,4 +230,40 @@ window.addEventListener('load', function() {
     
     // Start checking when to hide
     hideLoader();
+  });
+  // Mobile menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    
+    mobileToggle.addEventListener('click', function() {
+      this.classList.toggle('active');
+      mainNav.classList.toggle('active');
+      
+      // Toggle aria-expanded attribute
+      const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+      this.setAttribute('aria-expanded', !expanded);
+    });
+    
+    // Close menu when clicking on a link
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileToggle.classList.remove('active');
+        mainNav.classList.remove('active');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+    
+    // Touch device detection
+    function isTouchDevice() {
+      return 'ontouchstart' in window || navigator.maxTouchPoints;
+    }
+    
+    if (isTouchDevice()) {
+      document.body.classList.add('touch-device');
+      // Add touch-specific optimizations
+      document.querySelectorAll('button, a, input, .btn').forEach(el => {
+        el.style.tapHighlightColor = 'transparent';
+      });
+    }
   });
