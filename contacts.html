@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us |frontier Mining co.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Overlay -->
+<div id="loading-overlay">
+    <div class="nordic-loader">
+      <div class="axe-spinner">
+        <div class="axe-blade"></div>
+        <div class="axe-handle"></div>
+      </div>
+      <div class="rune-circle">
+        <span class="rune">ᛗ</span>
+        <span class="rune">ᛁ</span>
+        <span class="rune">ᚾ</span>
+        <span class="rune">ᛖ</span>
+      </div>
+      <p class="loading-text">Preparing the Mines...</p>
+    </div>
+  </div>
+    <header class="header">
+        <div class="logo-container">
+            <img src="images/new logo.jpg" alt="frontier Mining co. Logo" class="logo">
+            <h1>frontier Mining co.</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contacts.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background-image: linear-gradient(rgba(46, 52, 64, 0.7), rgba(46, 52, 64, 0.7)), url('images/frontier\ logo.jpg');">
+            <div class="hero-content">
+                <h2>Get in Touch</h2>
+                <p>We're here to answer your questions about our operations</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Headquarters</h3>
+                            <p>Gruvgatan 12<br>111 30 Stockholm, Sweden</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+46701941667</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>ulicoen@mail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Office Hours</h3>
+                            <p>Monday-Friday: 8:00-17:00 CET</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" action="submit-form.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="general">General Inquiry</option>
+                                <option value="investor">Investor Relations</option>
+                                <option value="media">Media Inquiry</option>
+                                <option value="careers">Career Opportunities</option>
+                                <option value="supplier">Supplier Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    
+                    <div id="formMessage" class="form-message">
+                        <!-- Success/error messages will appear here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="locations-section">
+            <h2>Our Locations</h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="images/headq.jpg" alt="Stockholm HQ">
+                    </div>
+                    <div class="location-info">
+                        <h3>Stockholm Headquarters</h3>
+                        <p>Gruvgatan 12, 111 30 Stockholm</p>
+                        <p><i class="fas fa-phone"></i> +46 8 123 4567</p>
+                        <p><i class="fas fa-envelope"></i>ulicoen@mail.com</p>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="images/Kiruna Operations.jpg" alt="Kiruna Office">
+                    </div>
+                    <div class="location-info">
+                        <h3>Kiruna Operations</h3>
+                        <p>Gruvleden 5, 981 31 Kiruna</p>
+                        <p><i class="fas fa-phone"></i> +46 980 123 45</p>
+                        <p><i class="fas fa-envelope"></i> kiruna@frontier Mining co.se</p>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="images/Bergslagen Mine.jpg" alt="Bergslagen Office">
+                    </div>
+                    <div class="location-info">
+                        <h3>Bergslagen Mine</h3>
+                        <p>Malmvägen 8, 738 93 Fagersta</p>
+                        <p><i class="fas fa-phone"></i> +46 223 123 45</p>
+                        <p><i class="fas fa-envelope"></i> bergslagen@frontier Mining co.se</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What minerals does frontier Mining co. extract?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We specialize in iron ore, rare earth elements, zinc, lead, and copper. Our operations focus on minerals critical for modern technology and infrastructure.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How does frontier Mining co. ensure environmental responsibility?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We implement comprehensive environmental management systems, use renewable energy, practice progressive reclamation, and maintain strict water recycling programs at all our sites.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Are there career opportunities at your mines?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we regularly hire geologists, engineers, technicians, and various operational roles. Visit our Careers page or contact our HR department for current openings.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you offer mine tours or visitor programs?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer limited educational tours by appointment. Please contact our community relations department at least 4 weeks in advance to arrange a visit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('i');
+                    
+                    // Toggle answer visibility
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+                    }
+                });
+            });
+            
+            // Check for form submission status
+            const urlParams = new URLSearchParams(window.location.search);
+            const status = urlParams.get('status');
+            const formMessage = document.getElementById('formMessage');
+            
+            if (status === 'success') {
+                formMessage.textContent = 'Thank you for your message! We will get back to you soon.';
+                formMessage.style.color = 'green';
+                formMessage.style.display = 'block';
+            } else if (status === 'error') {
+                formMessage.textContent = 'There was an error sending your message. Please try again.';
+                formMessage.style.color = 'red';
+                formMessage.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
